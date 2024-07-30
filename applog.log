@@ -1,0 +1,539 @@
+07:25:21.083 [main] INFO  o.s.w.c.ContextLoader#307 Root WebApplicationContext: initialization started
+07:25:21.162 [main] INFO  o.s.w.c.s.XmlWebApplicationContext#573 Refreshing Root WebApplicationContext: startup date [Tue Jul 30 07:25:21 UTC 2024]; root of context hierarchy
+07:25:21.186 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader#317 Loading XML bean definitions from ServletContext resource [/WEB-INF/appconfig-root.xml]
+07:25:21.285 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader#317 Loading XML bean definitions from ServletContext resource [/WEB-INF/appconfig-mvc.xml]
+07:25:21.486 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader#317 Loading XML bean definitions from ServletContext resource [/WEB-INF/appconfig-data.xml]
+07:25:21.651 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader#317 Loading XML bean definitions from ServletContext resource [/WEB-INF/appconfig-rabbitmq.xml]
+07:25:21.679 [main] INFO  o.s.b.f.x.XmlBeanDefinitionReader#317 Loading XML bean definitions from ServletContext resource [/WEB-INF/appconfig-security.xml]
+07:25:21.758 [main] INFO  o.s.s.c.SpringSecurityCoreVersion#59 You are running with Spring Security Core 4.0.2.RELEASE
+07:25:21.781 [main] INFO  o.s.s.c.SecurityNamespaceHandler#78 Spring Security 'config' module version is 4.0.2.RELEASE
+07:25:21.818 [main] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser#158 Creating access control expression attribute 'hasRole('ROLE_USER')' for /
+07:25:21.823 [main] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser#158 Creating access control expression attribute 'hasRole('ROLE_USER')' for /welcome
+07:25:21.842 [main] INFO  o.s.s.c.h.HttpSecurityBeanDefinitionParser#306 Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 600, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1100, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300]
+07:25:22.238 [main] INFO  o.s.c.s.PropertySourcesPlaceholderConfigurer#172 Loading properties file from class path resource [application.properties]
+07:25:22.475 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean#334 Building JPA container EntityManagerFactory for persistence unit 'default'
+07:25:24.912 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/registration],methods=[POST]}" onto public final java.lang.String com.visualpathit.account.controller.UserController.registration(com.visualpathit.account.model.User,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+07:25:24.913 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/registration],methods=[GET]}" onto public final java.lang.String com.visualpathit.account.controller.UserController.registration(org.springframework.ui.Model)
+07:25:24.913 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/login],methods=[GET]}" onto public final java.lang.String com.visualpathit.account.controller.UserController.login(org.springframework.ui.Model,java.lang.String,java.lang.String)
+07:25:24.913 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/ || /welcome],methods=[GET]}" onto public final java.lang.String com.visualpathit.account.controller.UserController.welcome(org.springframework.ui.Model)
+07:25:24.913 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/index],methods=[GET]}" onto public final java.lang.String com.visualpathit.account.controller.UserController.indexHome(org.springframework.ui.Model)
+07:25:24.914 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/users],methods=[GET]}" onto public java.lang.String com.visualpathit.account.controller.UserController.getAllUsers(org.springframework.ui.Model)
+07:25:24.914 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/users/{id}],methods=[GET]}" onto public java.lang.String com.visualpathit.account.controller.UserController.getOneUser(java.lang.String,org.springframework.ui.Model)
+07:25:24.915 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/user/{username}],methods=[GET]}" onto public final java.lang.String com.visualpathit.account.controller.UserController.userUpdate(java.lang.String,org.springframework.ui.Model)
+07:25:24.915 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/user/{username}],methods=[POST]}" onto public final java.lang.String com.visualpathit.account.controller.UserController.userUpdateProfile(java.lang.String,com.visualpathit.account.model.User,org.springframework.ui.Model)
+07:25:24.916 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/user/rabbit],methods=[GET]}" onto public java.lang.String com.visualpathit.account.controller.UserController.rabbitmqSetUp()
+07:25:24.917 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/rest/users/update/{id}],methods=[GET]}" onto public java.lang.String com.visualpathit.account.controller.ElasticSearchController.update(java.lang.String,org.springframework.ui.Model) throws java.io.IOException
+07:25:24.918 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/rest/users/delete/{id}],methods=[GET]}" onto public java.lang.String com.visualpathit.account.controller.ElasticSearchController.delete(java.lang.String,org.springframework.ui.Model)
+07:25:24.918 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/user/elasticsearch],methods=[GET]}" onto public java.lang.String com.visualpathit.account.controller.ElasticSearchController.insert(org.springframework.ui.Model) throws java.io.IOException
+07:25:24.918 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/rest/users/view/{id}],methods=[GET]}" onto public java.lang.String com.visualpathit.account.controller.ElasticSearchController.view(java.lang.String,org.springframework.ui.Model)
+07:25:24.923 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/upload],methods=[GET]}" onto public final java.lang.String com.visualpathit.account.controller.FileUploadController.upload(org.springframework.ui.Model)
+07:25:24.924 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping#532 Mapped "{[/uploadFile],methods=[POST]}" onto public java.lang.String com.visualpathit.account.controller.FileUploadController.uploadFileHandler(java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile)
+07:25:25.814 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter#532 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jul 30 07:25:21 UTC 2024]; root of context hierarchy
+07:25:25.910 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter#532 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jul 30 07:25:21 UTC 2024]; root of context hierarchy
+07:25:26.008 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping#341 Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+07:25:27.329 [main] INFO  o.s.s.w.DefaultSecurityFilterChain#28 Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@7711bbd9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c08b45e, org.springframework.security.web.header.HeaderWriterFilter@a5810be, org.springframework.security.web.csrf.CsrfFilter@5b863697, org.springframework.security.web.authentication.logout.LogoutFilter@2133814d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28906b71, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6287533d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8dff374, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@355b32cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e3b1cf2, org.springframework.security.web.session.SessionManagementFilter@46fdaab3, org.springframework.security.web.access.ExceptionTranslationFilter@31ceb54b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5def14d3]
+07:25:27.341 [main] INFO  o.s.s.c.h.DefaultFilterChainValidator#139 Checking whether login URL '/login' is accessible with your configuration
+07:25:27.454 [main] INFO  o.s.c.s.DefaultLifecycleProcessor#341 Starting beans in phase -2147482648
+07:25:27.454 [main] INFO  o.s.c.s.DefaultLifecycleProcessor#341 Starting beans in phase 2147483647
+07:25:27.555 [SimpleAsyncTaskExecutor-1] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:27.587 [SimpleAsyncTaskExecutor-3] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:27.589 [SimpleAsyncTaskExecutor-2] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:27.617 [main] INFO  o.s.w.c.ContextLoader#347 Root WebApplicationContext: initialization completed in 6530 ms
+07:25:27.649 [main] INFO  o.s.w.s.DispatcherServlet#488 FrameworkServlet 'dispatcher': initialization started
+07:25:27.655 [main] INFO  o.s.w.c.s.XmlWebApplicationContext#573 Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Jul 30 07:25:27 UTC 2024]; parent: Root WebApplicationContext
+07:25:27.664 [main] INFO  o.s.w.s.DispatcherServlet#507 FrameworkServlet 'dispatcher': initialization completed in 12 ms
+07:25:32.635 [SimpleAsyncTaskExecutor-1] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:32.649 [SimpleAsyncTaskExecutor-2] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:32.650 [SimpleAsyncTaskExecutor-3] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:32.652 [SimpleAsyncTaskExecutor-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@55b87372: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:32.662 [SimpleAsyncTaskExecutor-3] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@68cd34a: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:32.680 [SimpleAsyncTaskExecutor-4] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:32.684 [SimpleAsyncTaskExecutor-1] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@5981a33c: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:32.694 [SimpleAsyncTaskExecutor-5] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:32.700 [SimpleAsyncTaskExecutor-6] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:37.873 [SimpleAsyncTaskExecutor-4] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:37.874 [SimpleAsyncTaskExecutor-4] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@6982223c: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:37.875 [SimpleAsyncTaskExecutor-5] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:37.875 [SimpleAsyncTaskExecutor-6] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:37.886 [SimpleAsyncTaskExecutor-6] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@4bfe030b: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:37.891 [SimpleAsyncTaskExecutor-5] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@17b63d94: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:37.911 [SimpleAsyncTaskExecutor-7] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:37.928 [SimpleAsyncTaskExecutor-8] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:37.933 [SimpleAsyncTaskExecutor-9] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:43.003 [SimpleAsyncTaskExecutor-8] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:43.004 [SimpleAsyncTaskExecutor-8] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@9fcf27b: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:43.019 [SimpleAsyncTaskExecutor-10] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:43.101 [SimpleAsyncTaskExecutor-9] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:43.102 [SimpleAsyncTaskExecutor-9] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@3fba6282: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:43.105 [SimpleAsyncTaskExecutor-7] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:43.116 [SimpleAsyncTaskExecutor-7] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@43884cd7: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:43.118 [SimpleAsyncTaskExecutor-11] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:43.122 [SimpleAsyncTaskExecutor-12] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:48.085 [SimpleAsyncTaskExecutor-10] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:48.097 [SimpleAsyncTaskExecutor-10] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@112e8459: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:48.121 [SimpleAsyncTaskExecutor-13] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:48.197 [SimpleAsyncTaskExecutor-12] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:48.201 [SimpleAsyncTaskExecutor-12] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@1e1ac6c6: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:48.205 [SimpleAsyncTaskExecutor-11] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:48.205 [SimpleAsyncTaskExecutor-11] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@1a635ee7: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:48.216 [SimpleAsyncTaskExecutor-14] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:48.219 [SimpleAsyncTaskExecutor-15] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:53.177 [SimpleAsyncTaskExecutor-13] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:53.178 [SimpleAsyncTaskExecutor-13] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@62a8d71c: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:53.192 [SimpleAsyncTaskExecutor-16] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:53.302 [SimpleAsyncTaskExecutor-14] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:53.304 [SimpleAsyncTaskExecutor-15] WARN  o.s.a.r.l.SimpleMessageListenerContainer#1568 Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+07:25:53.305 [SimpleAsyncTaskExecutor-14] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@728106fe: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:53.311 [SimpleAsyncTaskExecutor-15] INFO  o.s.a.r.l.SimpleMessageListenerContainer#1554 Restarting Consumer@2322f24d: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+07:25:53.334 [SimpleAsyncTaskExecutor-17] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
+07:25:53.351 [SimpleAsyncTaskExecutor-18] ERROR o.s.a.r.l.SimpleMessageListenerContainer#1149 Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:367) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:565) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1430) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1411) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1387) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:336) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary(SimpleMessageListenerContainer.java:1135) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1200(SimpleMessageListenerContainer.java:96) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1380) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:50) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:859) ~[amqp-client-4.0.2.jar:4.0.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1000) ~[amqp-client-4.0.2.jar:4.0.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:355) ~[spring-rabbit-1.7.1.RELEASE.jar:na]
+	... 9 common frames omitted
